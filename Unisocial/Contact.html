@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniSocial</title>
+    <link href="img/css/home.css" rel="stylesheet" />
+
+    <style>
+        @import url('img/css/contact.css');
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">UNI <span>SOCIAL</span></div>
+        <ul>
+            <li><a href="Home.html">HOME</a></li>
+            <li>
+                <a href="#">ABOUT US ▼</a>
+                <div class="dropdown">
+                    <a href="#our-story">Our Story</a>
+                    <a href="#mission">Mission</a>
+                    <a href="#team">Team</a>
+                </div>
+            </li>
+            <li><a href="#">COURSES</a></li>
+            <li><a href="#">CONTACTS</a></li>
+            <li><a href="Login.html">SIGN IN</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section with Video -->
+    <div class="hero">
+        <video autoplay loop muted>
+            <source src="img/Homeback.mp4" type="video/mp4">
+        </video>
+        <div class="overlay">
+            <h2>Have any questions or need assistance? Feel free to reach out to us by filling out the form below:</h2>
+        </div>
+    </div>
+
+    <!-- Contact Form Section (Centered Form) -->
+    <div class="contact-container">
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="8d1489f5-1177-4f2e-a1bd-6792feed9caf">
+                <input type="text" name="name" class="form-input" placeholder="Your Name" required>
+                <input type="email" name="email" class="form-input" placeholder="Your Email" required>
+                <input type="text" name="subject" class="form-input" placeholder="Subject" required>
+                <textarea class="form-input" name="message" rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 UniSocial. All rights reserved.</p>
+    </footer>
+
+    <script  type="module"src="img/script/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unisocial - Student Dashboard</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="img/css/student.css" rel="stylesheet" />
+    <link rel="stylesheet" href="img/css/coursesex.css" />
+
+
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <h2>📖 Unisocial</h2>
+        <ul>
+            <li><a href="StudentDashboard.html">📚 My Profile</a></li>
+            <li><a href="#">📌 Subscriptions</a></li>
+            <li><a href="#">💬 Unitalks</a></li>
+            <li><a href="#">⭐ Review</a></li>
+            <li class="logout-btn"><a href="#" id="logout">🚪 Logout</a></li>
+        </ul>
+    </nav>
+
+    <!-- Top Bar -->
+    <header class="topbar">
+        <h1>Courses</h1>
+        <div class="profile">
+            <div id="profile-icon">M2</div>
+            <div class="dropdown">
+                <p><strong id="user-name">Loading...</strong></p>
+                <p id="user-id">Student ID: ...</p>
+                <p id="user-school">School: ...</p>
+                <p id="user-year">Year: ...</p>
+                <hr>
+                <a href="#">Profile</a>
+                <a href="#" id="logout-dropdown">Logout</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="content">
+        <h2>My Courses</h2>
+        <div id="courses-container">
+            <!-- Courses will be loaded here -->
+        </div>
+
+        <!-- Button to open Add Topic modal -->
+        <button id="add-topic-btn">Add Topic</button>
+
+        <!-- Modal for Adding Topic -->
+        <div id="add-topic-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Add Topic</h2>
+                <form id="add-topic-form">
+                    <label for="topic-name">Topic Name:</label>
+                    <input type="text" id="topic-name" required><br>
+
+                    <label for="topic-description">Description:</label>
+                    <textarea id="topic-description" required></textarea><br>
+
+                    <label for="school-offering">School Offering:</label>
+                    <input type="text" id="school-offering" required><br>
+
+                    <label for="faculty-dropdown">Faculty:</label>
+                    <select id="faculty-dropdown" required>
+                        <option value="Science">Science</option>
+                        <option value="Engineering">Engineering</option>
+                        <option value="Arts">Arts</option>
+                        <option value="Business">Business</option>
+                    </select><br><br>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- JavaScript Files (Placed Before Closing Body Tag for Better Performance) -->
+    <script type="module" src="img/script/script.js"></script>
+    <script type="module" src="img/script/coursex.js"></script>
+
+</body>
+</html>

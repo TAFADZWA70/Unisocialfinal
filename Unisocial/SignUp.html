@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unisocial</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="img/css/login.css" rel="stylesheet" />
+    <script type="module" src="img/script/signup.js"></script> <!-- Ensure it's the correct path -->
+    <script>
+        var countDownDate = new Date("March 30, 2025 00:00:00").getTime();
+
+        var x = setInterval(function () {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+
+        document.querySelector(".signup").addEventListener("click", function () {
+            window.location.href = "SignUp.html";
+        });
+
+
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            color: white;
+            background-image: url('img/hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .error {
+            color: red;
+            font-size: 12px;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.8);
+            font-size: 16px;
+            color: #333;
+        }
+
+            select:focus {
+                outline: none;
+                border: 2px solid #FFA500;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">UNI <span>SOCIAL</span></div>
+            <ul>
+                <li><a href="Home.html">HOME</a></li>
+                <li>
+                    <a href="#">ABOUT US ▼</a>
+                    <div class="dropdown">
+                        <a href="#our-story">Our Story</a>
+                        <a href="#mission">Mission</a>
+                        <a href="#team">Team</a>
+                    </div>
+                </li>
+                <li><a href="#">COURSES</a></li>
+                <li><a href="Contact.html">CONTACTS</a></li>
+                <li><a href="Login.html">SIGN IN</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="left-section">
+                <h1>Take any online course and level up your skills</h1>
+                <div class="countdown" id="countdown">
+                    <div><span id="days">00</span> Days</div>
+                    <div><span id="hours">00</span> Hours</div>
+                    <div><span id="minutes">00</span> Minutes</div>
+                    <div><span id="seconds">00</span> Seconds</div>
+                </div>
+            </div>
+            <div class="form-container">
+                <h2>Sign Up</h2>
+                <form id="signup-form">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="text" id="surname" placeholder="Your Surname" required>
+                    <input type="date" id="dob" required>
+                    <input type="text" id="idPassport" placeholder="ID/Passport Number" required>
+                    <input type="text" id="address" placeholder="Address" required>
+                    <input type="text" id="school" placeholder="School" required>
+                    <input type="number" id="year" placeholder="Year of Study" required>
+                    <select id="role" required>
+                        <option value="">Select Role</option>
+                        <option value="tutor">Tutor</option>
+                        <option value="student">Student</option>
+                        <option value="both">Both</option>
+                    </select>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <input type="password" id="password" placeholder="Your Password" required>
+                    <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+                    <span class="error" id="error-message"></span>
+                    <button type="submit" class="btn signup">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <footer>
+        <p>&copy; 2024 UniSocial. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+

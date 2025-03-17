@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Unisocial", "Unisocial\Unisocial.vbproj", "{73E33CA3-8704-464B-8844-705E5523C04A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73E33CA3-8704-464B-8844-705E5523C04A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73E33CA3-8704-464B-8844-705E5523C04A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73E33CA3-8704-464B-8844-705E5523C04A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73E33CA3-8704-464B-8844-705E5523C04A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C5FB957C-84C5-46C0-84ED-C2351B17988B}
+	EndGlobalSection
+EndGlobal
